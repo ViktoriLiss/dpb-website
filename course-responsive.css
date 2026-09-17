@@ -1,0 +1,37 @@
+/* Final responsive containment for detailed course pages. Loaded last. */
+/* RESPONSIVE TEXT SAFETY — course-specific long text containment. */
+html,body{max-width:100%;overflow-x:clip}
+.gomzhin-course *,main.davtyan-v2 *{min-width:0}
+.gomzhin-course :where(h1,h2,h3,h4,p,li,dt,dd,summary,label,a,button,strong),main.davtyan-v2 :where(h1,h2,h3,h4,p,li,dt,dd,summary,label,a,button,strong){max-width:100%;overflow-wrap:anywhere}
+.gomzhin-course :is(h1,h2,h3,h4,h5,h6),main.davtyan-v2 :is(h1,h2,h3,h4,h5,h6){overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important}
+.gomzhin-course :where(h1,h2,h3,h4),main.davtyan-v2 :where(h1,h2,h3,h4){text-wrap:balance}
+@media(max-width:1180px){
+ .gomzhin-course .gomzhin-hero,.gomzhin-course .gomzhin-support,.gomzhin-course .gomzhin-kit{grid-template-columns:minmax(0,1fr)!important}
+ .gomzhin-course .gomzhin-hero,.gomzhin-course .clinical-doubts,.gomzhin-course .gomzhin-kit,.gomzhin-course .gomzhin-registration{height:auto!important;min-height:0!important}
+ .gomzhin-course .gomzhin-hero__copy,.gomzhin-course .gomzhin-hero__image,.gomzhin-course .gomzhin-support__copy,.gomzhin-course .gomzhin-kit__body{width:auto!important;max-width:100%!important}
+ .gomzhin-course :is(.gomzhin-hero h1 span,.clinical-doubts__center h2 span,.course-fit h2,.gomzhin-speaker h2,.gomzhin-included .section-heading h2,.gomzhin-practice__title span){height:auto!important;white-space:normal!important}
+ .gomzhin-course .gomzhin-hero__image{grid-column:1!important;grid-row:auto!important;min-height:clamp(320px,56vw,560px)!important;margin-inline:0!important}
+  .gomzhin-course .gomzhin-facts{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .gomzhin-course .course-path-grid article{height:auto!important;min-height:245px!important}
+ .gomzhin-course .clinical-doubts__stage{display:flex!important;flex-direction:column!important;min-height:0!important;gap:24px!important}
+ .gomzhin-course .clinical-doubts__center,.gomzhin-course .clinical-thoughts,.gomzhin-course .clinical-thoughts--bottom{position:static!important;width:100%!important;transform:none!important}
+ .gomzhin-course .clinical-doubts__center{order:-1}.gomzhin-course .clinical-thoughts{display:grid!important}.gomzhin-course .clinical-thought{width:fit-content!important;max-width:100%!important;white-space:normal!important;overflow-wrap:anywhere}
+ .gomzhin-course .gomzhin-support__mark{border-right:0;border-bottom:1px solid #282826}.gomzhin-course .gomzhin-registration{min-height:620px!important}
+ main.davtyan-v2 .dv-hero{grid-template-columns:minmax(0,1fr)!important;min-height:0!important;height:auto!important}
+ main.davtyan-v2 .dv-hero-copy,main.davtyan-v2 .dv-hero-visual,main.davtyan-v2 .dv-hero-facts{width:auto!important;max-width:100%!important;transform:none!important}
+ main.davtyan-v2 .dv-hero-visual{min-height:clamp(320px,56vw,560px)!important}main.davtyan-v2 .dv-hero-facts{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ main.davtyan-v2 .dv-fit-tile,main.davtyan-v2 .dv-bridge,main.davtyan-v2 .dv-kit,main.davtyan-v2 .dv-final{height:auto!important}main.davtyan-v2 .dv-fit-tile{min-height:330px!important}
+ main.davtyan-v2 .dv-price-hero{display:grid!important;grid-template-columns:minmax(0,1fr)!important;row-gap:14px!important;width:100%!important}main.davtyan-v2 .dv-price-hero>*{grid-column:1!important}
+}
+@media(max-width:760px){
+ .gomzhin-course .gomzhin-hero{padding-inline:22px!important}.gomzhin-course .gomzhin-hero__copy{padding-right:0!important}
+ .gomzhin-course .gomzhin-hero h1,.gomzhin-course .gomzhin-hero h1 span,.gomzhin-course .gomzhin-date,.gomzhin-course .gomzhin-lead{width:auto!important;max-width:100%!important;height:auto!important;white-space:normal!important}
+ .gomzhin-course .gomzhin-hero h1{font-size:clamp(42px,11vw,58px)!important;overflow-wrap:anywhere;word-break:break-word}.gomzhin-course .gomzhin-hero__image{margin-inline:-22px!important}.gomzhin-course .gomzhin-facts{grid-template-columns:1fr!important;margin-inline:-22px!important}.gomzhin-course .gomzhin-facts div{border-right:0!important}
+ .gomzhin-course .gomzhin-actions,.gomzhin-course .gomzhin-actions .button{width:100%}.gomzhin-course .gomzhin-actions .button{white-space:normal;text-align:center}.gomzhin-course .course-path-grid article,.gomzhin-course .course-fit-grid article,.gomzhin-course .gomzhin-included-grid article{min-height:0!important}
+ .gomzhin-course .gomzhin-kit,.gomzhin-course .gomzhin-registration{min-height:0!important}.gomzhin-course .gomzhin-registration{padding-block:88px!important}.course-registration-form{padding:36px 22px!important}
+ main.davtyan-v2 .dv-hero{padding-inline:22px!important}main.davtyan-v2 .dv-fixed-two-line>span,main.davtyan-v2 .dv-speaker-bio h3{white-space:normal!important}main.davtyan-v2 .dv-hero-copy{padding:64px 0 38px!important}main.davtyan-v2 .dv-hero-facts{grid-template-columns:1fr!important}
+ main.davtyan-v2 .real-course-actions,main.davtyan-v2 .real-course-actions .button{width:100%!important}main.davtyan-v2 .real-course-actions .button{white-space:normal!important;text-align:center}
+ main.davtyan-v2 .dv-thoughts-stage{display:flex!important;flex-direction:column!important;gap:12px!important}main.davtyan-v2 .dv-thought,main.davtyan-v2 .dv-thought-center{position:static!important;width:auto!important;max-width:100%!important;transform:none!important}main.davtyan-v2 .dv-thought{align-self:flex-start;white-space:normal!important}main.davtyan-v2 .dv-thought:nth-child(even){align-self:flex-end}main.davtyan-v2 .dv-thought-center{order:-1}
+ main.davtyan-v2 .dv-bridge-intro,main.davtyan-v2 .dv-kit{min-height:0!important}main.davtyan-v2 .dv-kit__body,main.davtyan-v2 .dv-kit__body .button{width:100%!important}
+}
+@media(max-width:360px){.gomzhin-course .section-pad,.gomzhin-course .gomzhin-hero{padding-inline:18px!important}.gomzhin-course .gomzhin-hero__image,.gomzhin-course .gomzhin-facts{margin-inline:-18px!important}main.davtyan-v2 .dv-hero{padding-inline:18px!important}}

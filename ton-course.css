@@ -1,0 +1,603 @@
+/* T.O.N. inherits approved course components; this file contains only scoped fixes. */
+
+.ton-course-page > .gomzhin-hero {
+  order: 1;
+}
+
+.ton-course-page .course-outcomes {
+  background: var(--course-paper);
+  color: var(--course-ink);
+}
+
+.ton-course-page .course-outcomes .section-heading h2,
+.ton-course-page .course-path-grid article h3 {
+  color: var(--course-ink);
+}
+
+.ton-course-page .course-outcomes .section-heading p,
+.ton-course-page .course-path-grid article p {
+  color: #686862;
+}
+
+.ton-course-page .course-path-grid article {
+  background: var(--course-paper);
+  color: var(--course-ink);
+}
+
+.ton-course-page .course-path-grid article:last-child {
+  background: #080808;
+  color: #f5f4ee;
+}
+
+.ton-course-page .course-path-grid article:last-child h3 {
+  color: #f5f4ee;
+}
+
+.ton-course-page .course-path-grid article:last-child p {
+  color: #d0d0c9;
+}
+
+.ton-course-page .gomzhin-speaker h2 {
+  font-size: 65px;
+  line-height: 1;
+  white-space: normal;
+}
+
+/* Speaker block follows the full-bleed Yuri reference composition. */
+.ton-course-page .gomzhin-speaker {
+  padding: 0;
+}
+
+.ton-course-page .gomzhin-speaker .speaker-role {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.ton-course-page .gomzhin-speaker p:not(.speaker-role) {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.ton-course-page .gomzhin-speaker > div {
+  padding: clamp(56px, 6vw, 100px);
+}
+
+.ton-course-page .gomzhin-hero__image {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  align-self: stretch;
+  height: 100%;
+}
+
+.ton-course-page .gomzhin-hero h1 {
+  letter-spacing: 0;
+}
+
+.ton-course-page .gomzhin-hero h1 span {
+  display: block;
+  white-space: nowrap;
+}
+
+.ton-course-page .gomzhin-hero h1 span:first-child::after {
+  content: none;
+}
+
+.ton-course-page .practice-checklist li {
+  font-size: 17px;
+}
+
+.ton-course-page .practice-checklist li::before {
+  color: #080808;
+}
+
+.ton-course-page .course-fit-grid h3 {
+  min-height: 2.1em;
+  font-size: 26px;
+}
+
+.ton-course-page .gomzhin-facts div {
+  padding-block: 12px;
+}
+
+.ton-course-page .gomzhin-facts dd {
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.ton-course-page .clinical-doubts__center h2 span {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.ton-course-page .course-outcomes .section-heading p:first-of-type {
+  margin-top: 28px;
+}
+
+.ton-course-page .gomzhin-certificate__copy h2 {
+  margin-bottom: 26px;
+}
+
+.ton-course-page .gomzhin-certificate__copy p {
+  margin-bottom: 0;
+}
+
+.ton-course-page .gomzhin-program .section-heading p {
+  margin-top: 26px;
+}
+
+.ton-course-page .clinical-doubts {
+  min-height: 810px;
+  display: grid;
+  place-items: center;
+  padding: 62px max(var(--pad), calc((100% - var(--grid-max)) / 2));
+  background: #e4e4df;
+  color: var(--course-ink);
+}
+
+.ton-course-page .clinical-doubts::before,
+.ton-course-page .clinical-doubts::after {
+  border-color: rgba(8, 8, 8, 0.13);
+}
+
+.ton-course-page .clinical-doubts__stage {
+  display: block;
+  width: 100%;
+  max-width: var(--grid-max);
+  min-height: 640px;
+  position: relative;
+}
+
+.ton-course-page .clinical-doubts__center {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: min(690px, 54vw);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ton-course-page .clinical-doubts__center h2 {
+  color: var(--course-ink);
+}
+
+.ton-course-page .clinical-doubts__lead {
+  color: #686862;
+}
+
+.ton-course-page .clinical-doubts__answer {
+  color: #585852;
+}
+
+.ton-course-page .clinical-thoughts {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  width: 270px;
+  gap: 130px;
+}
+
+.ton-course-page .clinical-thoughts--left {
+  top: 14%;
+  left: 2%;
+}
+
+.ton-course-page .clinical-thoughts--right {
+  top: 14%;
+  right: 2%;
+}
+
+.ton-course-page .clinical-thoughts--bottom {
+  top: auto;
+  bottom: 3%;
+  left: 50%;
+  display: flex;
+  width: 560px;
+  max-width: 42vw;
+  gap: 18px;
+  padding: 0;
+  transform: translateX(-50%);
+}
+
+.ton-course-page .clinical-thought,
+.ton-course-page .clinical-thoughts--bottom .clinical-thought {
+  min-height: 48px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.ton-course-page .clinical-thoughts--left .clinical-thought,
+.ton-course-page .clinical-thoughts--right .clinical-thought,
+.ton-course-page .clinical-thoughts--bottom .clinical-thought {
+  position: static;
+}
+
+@media (min-width: 761px) {
+  .ton-course-page .clinical-thoughts--left .clinical-thought,
+  .ton-course-page .clinical-thoughts--right .clinical-thought,
+  .ton-course-page .clinical-thoughts--bottom .clinical-thought {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(1) {
+    top: 6%;
+    left: 5%;
+  }
+
+  .ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(2) {
+    top: 43%;
+    left: 1%;
+  }
+
+  .ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(3) {
+    bottom: 7%;
+    left: 4%;
+  }
+
+  .ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(1) {
+    top: 6%;
+    right: 5%;
+  }
+
+  .ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(2) {
+    top: 43%;
+    right: 1%;
+  }
+
+  .ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(3) {
+    bottom: 7%;
+    right: 4%;
+  }
+
+  .ton-course-page .clinical-thoughts--bottom .clinical-thought:nth-child(1) {
+    bottom: 1%;
+    right: calc(50% + 9px);
+  }
+
+  .ton-course-page .clinical-thoughts--bottom .clinical-thought:nth-child(2) {
+    left: calc(50% + 9px);
+    bottom: 1%;
+  }
+}
+
+.ton-course-page .clinical-thoughts--left,
+.ton-course-page .clinical-thoughts--right,
+.ton-course-page .clinical-thoughts--bottom {
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
+  display: block;
+  padding: 0;
+  transform: none;
+}
+
+@media (min-width: 761px) {
+  .ton-course-page .clinical-thoughts--left,
+  .ton-course-page .clinical-thoughts--right,
+  .ton-course-page .clinical-thoughts--bottom {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .ton-course-page .clinical-thoughts--left .clinical-thought,
+  .ton-course-page .clinical-thoughts--right .clinical-thought,
+  .ton-course-page .clinical-thoughts--bottom .clinical-thought {
+    position: absolute !important;
+  }
+}
+
+@media (min-width: 761px) {
+  .ton-course-page .clinical-thoughts--left .clinical-thought,
+  .ton-course-page .clinical-thoughts--right .clinical-thought,
+  .ton-course-page .clinical-thoughts--bottom .clinical-thought {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  .ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(1),
+  .ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(1) {
+    top: 8%;
+  }
+
+  .ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(1) {
+    left: 6%;
+  }
+
+  .ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(1) {
+    right: 6%;
+  }
+
+  .ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(2) {
+    top: 45%;
+    left: -6%;
+  }
+
+  .ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(2) {
+    top: 45%;
+    right: -6%;
+  }
+
+  .ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(3),
+  .ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(3) {
+    top: 74%;
+  }
+
+  .ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(3) {
+    left: 6%;
+  }
+
+  .ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(3) {
+    right: 6%;
+  }
+
+  .ton-course-page .clinical-thoughts--bottom .clinical-thought:nth-child(1) {
+    top: 90%;
+    right: auto !important;
+    left: calc(50% - 230px) !important;
+  }
+
+  .ton-course-page .clinical-thoughts--bottom .clinical-thought:nth-child(2) {
+    top: 90%;
+    right: auto !important;
+    left: calc(50% + 9px) !important;
+  }
+}
+
+.ton-course-page .gomzhin-cases {
+  background: #e4e4df;
+}
+
+.ton-course-page .gomzhin-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 260px);
+  gap: 8px;
+}
+
+.ton-course-page .gomzhin-gallery a {
+  display: block;
+  min-height: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.ton-course-page .gomzhin-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  object-fit: cover;
+}
+
+.ton-course-page .gomzhin-gallery__tall {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.ton-course-page .gomzhin-gallery__apple {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.ton-course-page .gomzhin-gallery__smile {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.ton-course-page .gomzhin-gallery__triptych {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.ton-course-page .gomzhin-gallery__molar {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.ton-course-page .gomzhin-gallery__portrait {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.ton-course-page .gomzhin-gallery__wide {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
+
+@media (max-width: 760px) {
+  .ton-course-page .clinical-doubts {
+    min-height: 0;
+    padding: 72px 22px;
+  }
+
+  .ton-course-page .clinical-doubts__stage {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .ton-course-page .clinical-doubts__center {
+    position: static;
+    width: auto;
+    transform: none;
+    text-align: left;
+    order: -1;
+  }
+
+  .ton-course-page .clinical-thoughts,
+  .ton-course-page .clinical-thoughts--bottom {
+    position: static;
+    display: grid;
+    width: min(100%, 560px);
+    max-width: none;
+    gap: 10px;
+    padding: 0;
+    transform: none;
+  }
+
+  .ton-course-page .clinical-thoughts--right {
+    align-self: flex-end;
+  }
+
+  .ton-course-page .course-fit-grid h3 {
+    min-height: 0;
+  }
+
+  .ton-course-page .clinical-doubts__center h2 span {
+    display: inline;
+    white-space: normal;
+  }
+
+  .ton-course-page .gomzhin-hero {
+    grid-template-areas:
+      "copy"
+      "image"
+      "facts";
+  }
+
+  .ton-course-page .gomzhin-hero__copy {
+    grid-area: copy;
+  }
+
+  .ton-course-page .gomzhin-hero__image {
+    grid-area: image;
+  }
+
+  .ton-course-page .gomzhin-facts {
+    grid-area: facts;
+  }
+
+  .ton-course-page .gomzhin-speaker h2 {
+    font-size: clamp(44px, 12vw, 65px);
+  }
+
+  .ton-course-page .gomzhin-speaker > div {
+    padding: 64px 22px;
+  }
+
+  .ton-course-page .gomzhin-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: 185px;
+  }
+
+  .ton-course-page .gomzhin-gallery a {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .ton-course-page .gomzhin-gallery__tall {
+    grid-column: 1 / -1;
+    grid-row: span 2;
+  }
+
+  .ton-course-page .gomzhin-gallery__wide {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Works: match the approved Robert composition — heading first, gallery below. */
+.ton-course-page .gomzhin-cases > .gomzhin-shell {
+  display: block;
+}
+
+.ton-course-page .gomzhin-cases__intro {
+  position: static;
+  margin-bottom: 24px;
+}
+
+/* Эталонная анимация появления мыслей: запускается при входе блока в viewport. */
+.ton-course-page .clinical-thought{animation:none;opacity:0;transform:translateY(22px) scale(.96);transition:opacity .5s ease,transform .5s ease;transition-delay:var(--delay)}
+.ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(1){--delay:.05s}
+.ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(1){--delay:.18s}
+.ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(2){--delay:.31s}
+.ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(2){--delay:.44s}
+.ton-course-page .clinical-thoughts--left .clinical-thought:nth-child(3){--delay:.57s}
+.ton-course-page .clinical-thoughts--right .clinical-thought:nth-child(3){--delay:.70s}
+.ton-course-page .clinical-thoughts--bottom .clinical-thought:nth-child(1){--delay:.83s}
+.ton-course-page .clinical-thoughts--bottom .clinical-thought:nth-child(2){--delay:.96s}
+.ton-course-page .clinical-doubts.is-in-view .clinical-thought{opacity:1;transform:translateY(0) scale(1)}
+@media(prefers-reduced-motion:reduce){.ton-course-page .clinical-thought{opacity:1;transform:none;transition:none}}
+
+.ton-course-page .gomzhin-cases__intro h2 {
+  max-width: 720px;
+  margin-bottom: 22px;
+  line-height: 1;
+}
+
+.ton-course-page .gomzhin-cases__intro p {
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
+.ton-course-page .gomzhin-cases__intro small {
+  display: none;
+}
+
+.ton-course-page .gomzhin-gallery {
+  position: relative;
+  height: auto;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 260px);
+  gap: 8px;
+}
+
+.ton-course-page .gomzhin-gallery a {
+  position: static;
+  inset: auto;
+  width: auto;
+  height: auto;
+}
+
+.ton-course-page .gomzhin-gallery__tall { grid-column: 1; grid-row: 1 / span 2; }
+.ton-course-page .gomzhin-gallery__apple { grid-column: 2; grid-row: 1; }
+.ton-course-page .gomzhin-gallery__smile { grid-column: 3; grid-row: 1; }
+.ton-course-page .gomzhin-gallery__triptych { grid-column: 4; grid-row: 1; }
+.ton-course-page .gomzhin-gallery__molar { grid-column: 2; grid-row: 2; }
+.ton-course-page .gomzhin-gallery__portrait { grid-column: 3; grid-row: 2; }
+.ton-course-page .gomzhin-gallery__wide { grid-column: 1 / -1; grid-row: 3; }
+
+.ton-course-page .gomzhin-gallery > a {
+  grid-column: auto !important;
+  grid-row: auto !important;
+}
+
+.ton-course-page .gomzhin-gallery > a:nth-child(9),
+.ton-course-page .gomzhin-gallery > a:nth-child(10) {
+  grid-column: span 2 !important;
+  grid-row: 3 !important;
+}
+
+@media (max-width: 760px) {
+  .ton-course-page .gomzhin-cases__intro { margin-bottom: 24px; }
+  .ton-course-page .gomzhin-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: 185px;
+  }
+  .ton-course-page .gomzhin-gallery a { grid-column: auto; grid-row: auto; }
+  .ton-course-page .gomzhin-gallery > a:nth-child(9),
+  .ton-course-page .gomzhin-gallery > a:nth-child(10) { grid-column: auto !important; grid-row: auto !important; }
+  .ton-course-page .gomzhin-gallery__tall { grid-column: 1 / -1; grid-row: span 2; }
+  .ton-course-page .gomzhin-gallery__wide { grid-column: 1 / -1; }
+}

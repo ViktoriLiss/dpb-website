@@ -1,0 +1,259 @@
+/* About: mobile reading rhythm and compact galleries. */
+body:has(main.about-v2) :is(button, .button) { border-radius: 999px !important; }
+.about-mobile-controls { display: none; }
+.about-v2__education > summary { cursor: pointer; font-size: 16px; font-weight: 700; line-height: 1.4; padding: 16px 0; }
+@media (max-width: 680px) {
+ html body main.about-v2 > .section-pad { padding-block: 36px 44px !important; }
+ html body main.about-v2 > section { min-width: 0; }
+ html body main.about-v2 :is(.about-v2__principles, .about-v2__sergey, .about-v2__experience, .about-v2__work, .about-v2__branch) { gap: 28px; }
+ html body main.about-v2 .about-v2__hero figure { min-height: 0; height: 64vw; max-height: 320px; }
+ html body main.about-v2 .about-v2__hero-copy { min-height: 0; padding: 28px var(--pad) 36px; }
+ html.dpb-responsive body.dpb-responsive.dpb-responsive.dpb-responsive main.about-v2 .about-v2__hero h1 { font-size: clamp(30px, 8vw, 42px) !important; line-height: 1.12 !important; margin: 0 0 20px; }
+ html body main.about-v2 .about-v2__hero p { margin: 0 0 24px; font-size: 16px; line-height: 1.45; }
+ html body main.about-v2 .button { width: fit-content; max-width: 100%; min-height: 48px; padding: 12px 20px; font-size: 15px; line-height: 1.3; text-align: center; }
+ html body main.about-v2 section > header { margin-bottom: 28px; gap: 20px; }
+ html body main.about-v2 :is(.about-v2__principles, .about-v2__directions header, .about-v2__sergey-copy, .about-v2__experience-copy, .about-v2__friends-intro, .about-v2__conditions header, .about-v2__people header, .about-v2__work > div, .about-v2__works-intro, .about-v2__branch) p { font-size: 16px; line-height: 1.45; }
+ html body main.about-v2 :is(.about-v2__principles h2, .about-v2__sergey-copy h2, .about-v2__experience h2, .about-v2__work h2, .about-v2__branch h2) { margin-bottom: 20px; }
+ html body main.about-v2 .about-v2__principles-note { padding-top: 0; }
+ html body main.about-v2 .about-v2__principles-note strong { font-size: 23px; line-height: 1.2; }
+ html body main.about-v2 :is(.about-v2__module-grid article, .about-v2__conditions article) { min-height: 0; padding: 20px; }
+ html body main.about-v2 :is(.about-v2__module-grid, .about-v2__conditions > div) { border: 1px solid #666; }
+ html body main.about-v2 :is(.about-v2__module-grid article, .about-v2__conditions article) { border: 0; }
+ html body main.about-v2 :is(.about-v2__module-grid article + article, .about-v2__conditions article + article) { border-top: 1px solid #666; }
+ html.dpb-responsive body.dpb-responsive main.about-v2 :is(.about-v2__module-grid, .about-v2__direction-grid, .about-v2__conditions, .about-v2__conditions > div) { grid-template-columns: minmax(0, 1fr) !important; }
+ html body main.about-v2 :is(.about-v2__module-grid, .about-v2__conditions) article h3 { margin: 0 0 12px; }
+ html body main.about-v2 :is(.about-v2__module-grid, .about-v2__conditions) article p { font-size: 15px; line-height: 1.45; }
+ html body main.about-v2 :is(.about-v2__module-grid, .about-v2__conditions) article::after { width: 100px; top: -72px; right: -50px; bottom: auto; }
+ html body main.about-v2 .about-v2__conditions article > span { font-size: 32px; line-height: 1; margin-bottom: 18px; font-weight: 700; }
+ html body main.about-v2 .about-v2__conditions > strong { margin-top: 24px; font-size: 18px; line-height: 1.35; }
+ html body main.about-v2 .about-v2__direction-grid > a > div { min-height: 0; padding: 20px; }
+ html body main.about-v2 .about-v2__direction-grid img { height: 210px; }
+ html body main.about-v2 .about-v2__direction-grid h3 { margin: 12px 0; }
+ html body main.about-v2 .about-v2__direction-grid b { margin-top: 16px; padding: 10px 0; min-height: 44px; line-height: 1.4; }
+ html body main.about-v2 .about-v2__sergey figure { min-height: 0; height: 390px; max-width: 100%; }
+ html body main.about-v2 .about-v2__sergey-copy dl { margin-top: 24px; }
+ html body main.about-v2 .about-v2__sergey-copy dl > div { padding: 14px 0; }
+ html body main.about-v2 .about-v2__sergey-copy dt { font-size: 20px; line-height: 1.2; }
+ html body main.about-v2 .about-v2__sergey-copy dd { font-size: 14px; line-height: 1.4; }
+ html body main.about-v2 .about-v2__education { border-block: 1px solid #555; margin-top: 20px; }
+ html body main.about-v2 .about-v2__education ol { margin: 0; }
+ html body main.about-v2 .about-v2__education li { padding: 16px 0; }
+ html body main.about-v2 .about-v2__education li span { font-size: 14px; line-height: 1.45; }
+ html body main.about-v2 .about-v2__experience-copy .about-v2__statement { margin: 20px 0 0; font-size: 17px !important; line-height: 1.4 !important; }
+ html body main.about-v2 .about-v2__geography { margin: 0; font-size: 12px; line-height: 1.5; }
+ html body main.about-v2 .about-v2__archive { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; height: auto; min-height: 0; scrollbar-width: none; }
+ html body main.about-v2 .about-v2__archive img:nth-child(n) { display: block; flex: 0 0 100%; width: 100%; height: 260px !important; object-fit: contain; scroll-snap-align: start; }
+ html body main.about-v2 .about-v2__friends-intro h3 { font-size: 23px; line-height: 1.2; margin-bottom: 16px; }
+ html body main.about-v2 .about-v2__friends-ticker { margin: 28px 0 0; touch-action: auto; }
+ html body main.about-v2 .about-v2__friends-track { padding: 0; }
+ html body main.about-v2 .about-v2__friends-group { align-items: stretch; }
+ html body main.about-v2 .about-v2__friend-card { flex: 0 0 calc(100vw - 2 * var(--responsive-pad, var(--pad)) - 24px); height: auto; max-width: 340px; }
+ html body main.about-v2 .about-v2__friend-card img { height: 230px; flex-shrink: 0; }
+ html body main.about-v2 .about-v2__friend-card > div { padding: 18px; }
+ html body main.about-v2 .about-v2__friend-card h3 { height: auto; min-height: 0; margin: 0 0 12px; }
+ html body main.about-v2 .about-v2__friend-card strong { height: auto; font-size: 13px; line-height: 1.4; }
+ html body main.about-v2 .about-v2__friend-card p { margin-top: 12px; font-size: 14px; line-height: 1.4; }
+ html body main.about-v2 .about-v2__people-grid { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+ html body main.about-v2 .about-v2__people-grid article { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; }
+ html body main.about-v2 .about-v2__people-grid img { height: 250px; object-position: center 25%; }
+ html body main.about-v2 .about-v2__people-grid article > div { min-height: 0; padding: 20px; }
+ html body main.about-v2 .about-v2__people-grid h3 { margin: 0 0 12px; }
+ html body main.about-v2 .about-v2__people-grid p { font-size: 14px; line-height: 1.4; margin: 12px 0 0; }
+ html body main.about-v2 :is(.about-v2__carousel, .about-v2__case-carousel) { min-height: 0; height: 326px; padding: 0 0 56px; }
+ html body main.about-v2 .about-v2__carousel > img { min-height: 0 !important; height: 270px !important; object-fit: contain; }
+ html body main.about-v2 .about-v2__case-carousel > img { top: 135px; height: 270px !important; }
+ html body main.about-v2 .about-v2__carousel-button { width: 44px; height: 44px; top: auto; bottom: 0; transform: none; background: #111; }
+ html body main.about-v2 .about-v2__carousel-prev { left: 0; }
+ html body main.about-v2 .about-v2__carousel-next { right: 0; }
+ html body main.about-v2 .about-v2__carousel-count { bottom: 12px; right: auto; left: 50%; transform: translateX(-50%); padding: 4px 8px; }
+ html body main.about-v2 .about-v2__work > div > strong, html body main.about-v2 .about-v2__works-intro strong { font-size: 17px; line-height: 1.4; }
+ html body main.about-v2 .about-v2__map { min-height: 240px; }
+ .about-mobile-controls { display: flex; grid-column: 1/-1; align-items: center; justify-content: space-between; gap: 16px; margin-top: 14px; }
+ .about-mobile-controls button { width: 44px; height: 44px; padding: 0; display: grid; place-items: center; border: 1px solid currentColor; color: inherit; background: transparent; }
+ .about-mobile-controls button:disabled { opacity: .35; }
+ .about-mobile-controls svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+ .about-mobile-controls output { font-size: 14px; }
+}
+
+main.about-v2 .about-v2__carousel-button { display: grid; place-items: center; padding: 0; }
+main.about-v2 .about-v2__carousel-button svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+
+/* Full original copy on desktop; concise copy only on phones. */
+html body main.about-v2.about-v2.about-v2.about-v2.about-v2 .about-copy-mobile { display: none !important; }
+html body main.about-v2.about-v2.about-v2.about-v2.about-v2 .about-copy-desktop { display: inline !important; }
+@media (max-width: 680px) {
+ html body main.about-v2.about-v2.about-v2.about-v2.about-v2 .about-copy-desktop { display: none !important; }
+ html body main.about-v2.about-v2.about-v2.about-v2.about-v2 .about-copy-mobile { display: inline !important; }
+}
+
+@media (min-width: 681px) {
+ html body main.about-v2 .about-v2__principles-note strong { max-width: none; white-space: nowrap; }
+}
+
+/* Desktop: keep the three conditions visually consistent and the work carousel stable. */
+@media (min-width: 681px) {
+  html body main.about-v2 .about-v2__conditions article h3 .about-copy-desktop {
+    color: inherit !important;
+    font: inherit;
+    letter-spacing: inherit;
+  }
+  html body main.about-v2 .about-v2__work-gallery.about-v2__carousel {
+    height: clamp(560px, 40vw, 820px);
+    min-height: 0;
+  }
+  html body main.about-v2 .about-v2__work-gallery.about-v2__carousel > img {
+    height: 100% !important;
+    min-height: 0;
+    object-fit: cover;
+  }
+}
+
+/* Copy variants inside condition headings are text, never the numeric label. */
+html body main.about-v2 .about-v2__conditions article h3 :is(.about-copy-desktop, .about-copy-mobile) {
+  position: static;
+  z-index: auto;
+  display: inline !important;
+  margin: 0 !important;
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: none;
+}
+
+@media (min-width: 681px) {
+  html body main.about-v2 .about-v2__conditions article:nth-child(3) h3 {
+    max-width: none;
+  }
+}
+
+/* Use the same real location map as the home page. */
+main.about-v2 .about-v2__map { background: #e8e8e2; }
+main.about-v2 .about-v2__map::before,
+main.about-v2 .about-v2__map::after { display: none; }
+main.about-v2 .about-v2__map > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+main.about-v2 .about-v2__map > small { bottom: 28px; left: 28px; }
+
+/* Mobile: one concise story before the gallery. */
+@media (max-width: 680px) {
+  html body main.about-v2 .about-v2__works-intro { gap: 18px; }
+  html body main.about-v2 .about-v2__works-intro > div:nth-child(2) :is(h3, p) { display: none; }
+  html body main.about-v2 .about-v2__works-intro > div:nth-child(2) strong { margin-top: 0; }
+}
+
+/* About review: balanced spacing, corner ornaments and readable mobile photos. */
+html body main.about-v2 .about-v2__whole header { margin-bottom: 28px; }
+html body main.about-v2 .about-v2__whole header h2 { margin-bottom: 0; }
+@media (min-width: 681px) {
+  html body main.about-v2 .about-v2__experience { grid-template-rows: auto; row-gap: 32px; }
+  html body main.about-v2 .about-v2__geography { position: static; grid-column: 1 / -1; margin-top: 0; }
+  html body main.about-v2 .about-v2__experience-copy { display: block; height: auto; min-height: 0; }
+  html body main.about-v2 .about-v2__education { flex-shrink: 0; }
+  html body main.about-v2 .about-v2__education ol { margin-block: 28px 0; }
+  html body main.about-v2 .about-v2__experience-copy .about-v2__statement { margin-top: 28px; }
+  html body main.about-v2 .about-v2__education li strong { line-height: 1.35; }
+  html body main.about-v2 .about-v2__education li span { margin-top: 10px; line-height: 1.65; }
+  html body main.about-v2 .about-v2__experience-copy .about-v2__statement { line-height: 1.35 !important; }
+}
+@media (max-width: 680px) {
+  html body main.about-v2 .about-v2__whole header { margin-bottom: 24px; }
+  html body main.about-v2 .about-v2__sergey-copy dl > div { min-height: 0; padding-block: 20px; }
+  html body main.about-v2 :is(.about-v2__module-grid, .about-v2__conditions) article::after {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: -50px;
+    bottom: auto;
+    pointer-events: none;
+  }
+  html body main.about-v2 .about-v2__conditions article:nth-child(3)::after { border-width: 12px; }
+  html body main.about-v2 .about-v2__friend-card img {
+    height: auto;
+    aspect-ratio: 1.04;
+    object-fit: cover;
+    object-position: center top;
+  }
+  html body main.about-v2 .about-v2__work-gallery.about-v2__carousel {
+    height: auto;
+    padding: 0;
+    background: transparent;
+    touch-action: pan-y;
+  }
+  html body main.about-v2 .about-v2__work-gallery.about-v2__carousel > img {
+    height: auto !important;
+    aspect-ratio: 1.48;
+    object-fit: contain;
+  }
+  html body main.about-v2 .about-v2__work-gallery :is(.about-v2__carousel-button, .about-v2__carousel-count) { display: none; }
+  html body main.about-v2 .about-v2__works-intro > div:nth-child(2) p { display: block; margin: 0 0 20px; }
+  html body main.about-v2 .about-v2__branch dd { font-size: clamp(18px, 4.6vw, 30px); line-height: 1.35; white-space: nowrap; }
+}
+
+/* Follow-up: visible gallery navigation and a footer arrow beside the invitation. */
+@media (min-width: 681px) {
+  html.dpb-responsive body.dpb-responsive main.about-v2 .about-v2__experience.section-pad { padding-bottom: 28px !important; }
+}
+@media (max-width: 680px) {
+  html body main.about-v2 .about-v2__work > div > strong { margin-top: 18px; }
+  html body main.about-v2 .about-v2__work-gallery.about-v2__carousel { padding-bottom: 58px; }
+  html body main.about-v2 .about-v2__work-gallery .about-v2__carousel-button {
+    display: grid;
+    color: var(--about-ink);
+    background: transparent;
+    border: 1px solid currentColor;
+  }
+  html body main.about-v2 .about-v2__work-gallery .about-v2__carousel-count {
+    display: block;
+    background: transparent;
+    color: var(--about-ink);
+  }
+}
+body:has(main.about-v2) .site-footer .footer-cta {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  align-content: center;
+  column-gap: 18px;
+}
+body:has(main.about-v2) .site-footer .footer-cta > span { grid-column: 1 / -1; }
+body:has(main.about-v2) .site-footer .footer-cta > strong { grid-column: 1; width: max-content; }
+body:has(main.about-v2) .site-footer .footer-cta > i {
+  position: static;
+  margin: 0;
+  transform: none;
+  grid-column: 2;
+  width: 1em;
+  min-width: 0;
+}
+body:has(main.about-v2) .site-footer .footer-cta:hover > i { transform: translate(6px, -6px); }
+@media (max-width: 680px) {
+  body:has(main.about-v2) .site-footer .footer-cta { column-gap: 10px; }
+  body:has(main.about-v2) .site-footer .footer-cta > strong { font-size: clamp(23px, 6.9vw, 42px); line-height: 1.1; white-space: nowrap; }
+  body:has(main.about-v2) .site-footer .footer-cta > i { font-size: 36px; }
+}
+/* Address refinement: compact label-to-value spacing and larger value text. */
+html body main.about-v2 .about-v2__branch dd { margin-top: 10px; font-size: clamp(40px, calc(3.2vw + 6px), 64px); }
+@media (max-width: 680px) {
+  html body main.about-v2 .about-v2__branch dd { font-size: clamp(24px, calc(4.6vw + 6px), 36px); }
+}
+/* Conditions numbers use the same bold weight at every viewport. */
+html body main.about-v2 .about-v2__conditions article > span { font-weight: 700; }
+/* Headings: larger mobile titles with balanced two-line conditions heading. */
+@media (max-width: 680px) {
+  html.dpb-responsive body.dpb-responsive.dpb-responsive.dpb-responsive main.about-v2 .about-v2__conditions h2 {
+    font-size: clamp(38px, 10.8vw, 50px) !important;
+    line-height: .98 !important;
+    letter-spacing: 0;
+    max-width: none;
+    text-wrap: balance;
+  }
+  html.dpb-responsive body.dpb-responsive.dpb-responsive.dpb-responsive main.about-v2 .about-v2__people h2 {
+    font-size: clamp(36px, 10vw, 50px) !important;
+    line-height: .98 !important;
+  }
+}@media (max-width: 480px) {
+  html.dpb-responsive body.dpb-responsive.dpb-responsive.dpb-responsive main.about-v2 .about-v2__conditions h2 { font-size: 36px !important; width: calc(100% + 16px); }
+}

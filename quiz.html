@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Короткий квиз dpb и полезный PDF-гайд по теме вебинара" />
+  <title>Получить PDF-гайд — dpb</title>
+  <link rel="stylesheet" href="styles.css?v=responsive-text-2" />
+  <link rel="stylesheet" href="additions.css?v=responsive-text-3" />
+<link rel="stylesheet" href="approved-mobile-patterns.css?v=1"></head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="dpb — на главную"><img src="assets/Лого дпб/лого 3.svg" alt="dpb" decoding="async"></a>
+    <nav class="desktop-nav" aria-label="Основная навигация"><a class="nav-active" href="courses.html">Обучение</a><a href="announcements.html">События</a><a href="materials.html">Материалы и технологии</a><a href="lab.html">Лаборатория</a><a href="about.html">О нас</a><a href="contacts.html">Контакты</a></nav>
+    <button class="menu-button" type="button">Меню</button>
+  </header>
+  <nav class="mobile-nav"><a href="courses.html">Курсы</a><a href="announcements.html">События</a><a href="materials.html">Материалы</a><a href="lab.html">Лаборатория</a><a href="contacts.html">Контакты</a></nav>
+
+  <main class="quiz-page">
+    <section class="quiz-intro section-dark section-pad">
+      <div>
+        <p class="kicker">Полезный материал dpb</p>
+        <h1>Получите гайд по теме вебинара</h1>
+        <p>Ответьте на четыре коротких вопроса. Мы узнаем, кем вы работаете и что вам интересно, а вы сразу получите PDF-гайд для подготовки к вебинару и осмысленного просмотра.</p>
+      </div>
+      <div class="quiz-reward">
+        <span>Что будет внутри PDF</span>
+        <h2>Рабочий гайд участника</h2>
+        <ul><li>вопросы к теме до вебинара;</li><li>маршрут просмотра для вашей роли;</li><li>структура заметок без лишней теории;</li><li>чек-лист внедрения после вебинара.</li></ul>
+        <small>Тема и содержание будут уточнены после утверждения программы.</small>
+      </div>
+    </section>
+
+    <section class="quiz-shell section-pad" id="quiz">
+      <div class="quiz-progress"><span>Вопрос <b id="quiz-current">1</b> из 4</span><div><i id="quiz-progress-bar"></i></div></div>
+      <form id="learning-quiz">
+        <fieldset class="quiz-step active" data-step="1"><legend>Кто вы?</legend><p>Так мы поймём, для какой аудитории готовить следующие вебинары и материалы.</p><div class="quiz-options"><label><input type="radio" name="role" value="Врач-стоматолог" /><span>Врач-стоматолог</span></label><label><input type="radio" name="role" value="Зубной техник" /><span>Зубной техник</span></label><label><input type="radio" name="role" value="Студент" /><span>Студент</span></label><label><input type="radio" name="role" value="Другая профессиональная роль" /><span>Другая профессиональная роль</span></label></div></fieldset>
+        <fieldset class="quiz-step" data-step="2"><legend>Какой у вас опыт?</legend><p>Это поможет делать материалы понятными и полезными на нужном уровне.</p><div class="quiz-options"><label><input type="radio" name="level" value="Начинающий" /><span>Только начинаю</span></label><label><input type="radio" name="level" value="Практикующий" /><span>Уже работаю на практике</span></label><label><input type="radio" name="level" value="Продвинутый" /><span>Ищу продвинутые протоколы</span></label><label><input type="radio" name="level" value="Пока не определился" /><span>Пока не могу определить</span></label></div></fieldset>
+        <fieldset class="quiz-step" data-step="3"><legend>Что вам сейчас интереснее?</legend><p>Выберите главный результат, который хотите получить от вебинара.</p><div class="quiz-options"><label><input type="radio" name="goal" value="Освоить новый практический навык" /><span>Новый практический навык</span></label><label><input type="radio" name="goal" value="Разобраться в материалах и технологиях" /><span>Материалы и технологии</span></label><label><input type="radio" name="goal" value="Разобрать ошибки и сложные случаи" /><span>Ошибки и сложные случаи</span></label><label><input type="radio" name="goal" value="Получить профессиональную базу" /><span>Профессиональная база</span></label></div></fieldset>
+        <fieldset class="quiz-step" data-step="4"><legend>Как вам удобнее участвовать?</legend><p>Формат — это способ участия, поэтому здесь только понятные варианты.</p><div class="quiz-options"><label><input type="radio" name="format" value="Очно" /><span>Очно</span></label><label><input type="radio" name="format" value="Онлайн" /><span>Онлайн</span></label><label><input type="radio" name="format" value="Гибридный формат" /><span>Очно или онлайн — выберу позже</span></label><label><input type="radio" name="format" value="Запись" /><span>Запись после мероприятия</span></label></div></fieldset>
+        <p class="quiz-error" hidden>Выберите один вариант, чтобы продолжить.</p>
+        <div class="quiz-controls"><button class="button quiz-back" type="button" hidden>Назад</button><button class="button button-dark quiz-next" type="button">Продолжить</button></div>
+      </form>
+
+      <div class="quiz-result" hidden>
+        <div><p class="kicker">Спасибо — ответы учтены</p><h2 id="result-title">Ваш PDF-гайд готов</h2><dl><div><dt>Вы</dt><dd id="result-role"></dd></div><div><dt>Опыт</dt><dd id="result-level"></dd></div><div><dt>Интерес</dt><dd id="result-goal"></dd></div><div><dt>Формат</dt><dd id="result-format"></dd></div></dl></div>
+        <div class="result-next"><p class="kicker">Полезный материал</p><h3>Гайд участника вебинара</h3><p>Скачайте рабочий PDF: он поможет подготовить вопросы, зафиксировать ключевые мысли и превратить просмотр в понятный план действий.</p><a class="button button-dark" href="assets/dpb-webinar-guide.pdf" download>Скачать PDF-гайд</a><p>Или оставьте контакт — в готовой версии сайта отправим документ в удобный мессенджер.</p><form class="quiz-contact"><input aria-label="Телефон или мессенджер" placeholder="+7 000 000-00-00" /><button class="button" type="submit">Получить в мессенджере</button></form><a href="courses.html">Смотреть будущие программы →</a></div>
+      </div>
+    </section>
+  </main>
+  <script src="inner.js?v=footer-main-restored-2"></script><script src="quiz.js"></script>
+<script src="footer.js?v=open-sans-clean-1"></script></body>
+</html>

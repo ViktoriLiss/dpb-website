@@ -1,0 +1,36 @@
+/* Shared course FAQ reference component. Keep source/public copies identical. */
+.course-faq-section{background:#f5f4ee;color:#080808}
+.course-faq-section .course-faq-bound{width:min(100%,1400px);margin:0 auto}
+.course-faq-section .course-faq-heading{border-top:1px solid #9c9b95;padding-top:23px;margin-bottom:94px}
+.course-faq-section .course-faq-heading h2{margin:0;font-family:"Axiforma";font-size:65px;font-weight:800;line-height:.9;letter-spacing:0}
+.course-faq-list{border-top:1px solid #9c9b95}
+.course-faq-list details{border-bottom:1px solid #9c9b95;transition:background .25s ease,color .25s ease}
+.course-faq-list details:hover,.course-faq-list details[open]{background:#deded8;color:#080808}
+.course-faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 28px;font-family:"Axiforma";font-size:21px;font-weight:400;line-height:1.08;letter-spacing:0;list-style:none;cursor:pointer}
+.course-faq-list summary::-webkit-details-marker{display:none}
+.course-faq-list summary>span:last-child{flex:0 0 44px;width:44px;height:44px;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-family:"Open Sans";font-size:25px;line-height:1;transition:transform .3s ease,border-color .25s ease}
+.course-faq-list details[open] summary>span:last-child{transform:rotate(45deg)}
+.course-faq-list details>p,.course-faq-list details>div{max-height:0;overflow:hidden;opacity:0;padding:0 28px;color:#54544f;font-family:"Open Sans";font-size:17px;line-height:1.5;transition:max-height .38s ease,opacity .25s ease,padding .38s ease}
+.course-faq-list details>div p{margin:0;color:inherit;font:inherit}
+.course-faq-list details[open]>p,.course-faq-list details[open]>div{max-height:520px;opacity:1;padding:0 28px 28px}
+.course-faq-list details[open]>p{color:#54544f}
+.course-faq-list :is(summary,p,div):focus-visible{outline:3px solid #1976d2;outline-offset:3px}
+@media(max-width:760px){.course-faq-section .course-faq-bound{width:100%}.course-faq-section .course-faq-heading{margin-bottom:38px;padding-top:18px}.course-faq-section .course-faq-heading h2{font-size:clamp(43px,11vw,65px)}.course-faq-list summary{padding:22px 0;font-size:21px}.course-faq-list summary>span:last-child{flex-basis:36px;width:36px;height:36px;font-size:21px}.course-faq-list details>p,.course-faq-list details>div{padding-left:0;padding-right:0}.course-faq-list details[open]>p,.course-faq-list details[open]>div{padding-left:0;padding-right:0;padding-bottom:24px}}
+@media(prefers-reduced-motion:reduce){.course-faq-list details,.course-faq-list summary>span:last-child,.course-faq-list details>p,.course-faq-list details>div{transition-duration:.01ms}}
+:is(.gomzhin-course .gomzhin-faq-section .section-heading,.ton-course-page section:has(.accordion) .section-heading,.davtyan-v2 .dv-section-head){border-top:1px solid #9c9b95;padding-top:23px;margin-bottom:94px}
+:is(.gomzhin-course .gomzhin-faq-section .section-heading h2,.ton-course-page section:has(.accordion) .section-heading h2,.davtyan-v2 .dv-section-head .dv-title){margin:0;font-family:"Axiforma";font-size:65px;font-weight:800;line-height:.9;letter-spacing:0}
+
+/* Compatibility selectors for the existing course-page FAQ markup. */
+:is(.gomzhin-course .gomzhin-faq-section,.ton-course-page section:has(.accordion),.davtyan-v2 .dv-faq){background:#f5f4ee;color:#080808}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list){border-top:1px solid #9c9b95}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details{border-bottom:1px solid #9c9b95;transition:background .25s ease,color .25s ease}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details:hover,:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details[open]{background:#deded8;color:#080808}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) summary{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 28px;font-family:"Axiforma";font-size:21px;font-weight:400;line-height:1.08;letter-spacing:0;list-style:none;cursor:pointer}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) summary::-webkit-details-marker{display:none}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) summary>span:last-child{flex:0 0 44px;width:44px;height:44px;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-family:"Open Sans";font-size:25px;line-height:1;transition:transform .3s ease,border-color .25s ease}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details[open] summary>span:last-child{transform:rotate(45deg)}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details>p,:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details>div{max-height:0;overflow:hidden;opacity:0;padding:0 28px;color:#54544f;font-family:"Open Sans";font-size:17px;line-height:1.5;transition:max-height .38s ease,opacity .25s ease,padding .38s ease}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details>div p{margin:0;color:inherit;font:inherit}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details[open]>p,:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details[open]>div{max-height:520px;opacity:1;padding:0 28px 28px}
+:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details[open]>p{color:#54544f}
+@media(max-width:760px){:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) summary{padding:22px 0;font-size:21px}:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) summary>span:last-child{flex-basis:36px;width:36px;height:36px;font-size:21px}:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details>p,:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details>div{padding-left:0;padding-right:0}:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details[open]>p,:is(.gomzhin-course .gomzhin-faq,.ton-course-page .accordion,.davtyan-v2 .dv-faq-list) details[open]>div{padding-left:0;padding-right:0;padding-bottom:24px}}

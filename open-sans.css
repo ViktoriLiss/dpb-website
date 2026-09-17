@@ -1,0 +1,10 @@
+/* Основной шрифт проекта. Axiforma используется отдельно для заголовков. */
+@font-face{font-family:"Open Sans";src:url('assets/Лого дпб/static/OpenSans-Regular.woff2') format('woff2'),url('assets/Лого дпб/static/OpenSans-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Open Sans";src:url('assets/Лого дпб/static/OpenSans-Medium.woff2') format('woff2'),url('assets/Лого дпб/static/OpenSans-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Open Sans";src:url('assets/Лого дпб/static/OpenSans-SemiBold.woff2') format('woff2'),url('assets/Лого дпб/static/OpenSans-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Open Sans";src:url('assets/Лого дпб/static/OpenSans-Bold.woff2') format('woff2'),url('assets/Лого дпб/static/OpenSans-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Open Sans";src:url('assets/Лого дпб/static/OpenSans-ExtraBold.woff2') format('woff2'),url('assets/Лого дпб/static/OpenSans-ExtraBold.ttf') format('truetype');font-weight:800 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Open Sans";src:url('assets/Лого дпб/static/OpenSans-Italic.woff2') format('woff2'),url('assets/Лого дпб/static/OpenSans-Italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
+
+:root{--body:"Open Sans";--display:"Axiforma"}
+body,button,input,select,textarea{font-family:"Open Sans"}

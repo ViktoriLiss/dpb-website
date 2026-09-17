@@ -1,0 +1,42 @@
+/* Shared DPB course template: structure and approved type scale. */
+.course-template{--course-heading-family:"Axiforma";--course-body-family:"Open Sans";--course-paper:#f5f4ee;--course-ink:#080808;--course-muted:#d2d2cc;background:var(--course-paper);color:var(--course-ink)}
+.course-template :is(h1,h2){font-family:var(--course-heading-family);font-size:65px;font-weight:800;line-height:.9;letter-spacing:0}
+.course-template :is(p,li){font-family:var(--course-body-family);font-size:18px;font-weight:400;line-height:1.43;letter-spacing:.2px}
+.course-template :is(.gomzhin-faq summary,.accordion summary){font-family:var(--course-heading-family);font-size:22px;font-weight:400;line-height:.9;letter-spacing:0}
+.course-template .button{font-family:var(--course-body-family)}
+.course-template .course-template-placeholder{color:var(--muted);font-style:italic}
+.course-template{display:flex;flex-direction:column}.course-template>section{order:30}.course-template>.real-course-hero{order:1}.course-template>:is(.clinical-doubts,.ton-method,.course-clarity){order:2}.course-template>.course-fit{order:3}.course-template>.course-outcomes{order:4}.course-template>.real-speaker{order:5}.course-template>:is(.gomzhin-practice,.course-practice-feature,.lecture-dialogue){order:6}.course-template>.course-program{order:7}.course-template>.speaker-cases{order:8}.course-template>:is(.course-tools,.gomzhin-included){order:9}.course-template>:is(.implementation-kit,.gomzhin-kit){order:10}.course-template>.document-section{order:11}.course-template>:is(.after-course-support,.gomzhin-support){order:12}.course-template>.course-conditions,.course-template>section:has(.cost-scope){order:13}.course-template>.gomzhin-faq-section,.course-template>section:has(.accordion){order:14}.course-template>.connected-event{order:15}.course-template>:is(.real-registration,.gomzhin-registration){order:16}
+
+/* Approved program-module standard for every DPB course page. */
+.course-template .course-program-standard{padding:clamp(84px,7vw,132px) max(24px,calc((100% - 1400px)/2));background:var(--course-paper);color:var(--course-ink)}
+.course-template .course-program-standard .section-heading{display:block;width:100%;max-width:1400px;margin:0 auto 54px;padding-top:24px;border-top:1px solid #111}
+.course-template .course-program-standard .section-heading .kicker{display:none}
+.course-template .course-program-standard .section-heading h2{margin:0;font-size:65px;line-height:.9;font-weight:800;letter-spacing:0}
+.course-template .course-program-standard .section-heading p{margin:17px 0 0;color:#77766f;font-size:17px;line-height:1.4}
+.course-template .course-program-standard .course-program-accordion{width:100%;max-width:1400px;margin:0 auto;border-top:1px solid #0a0a0a}
+.course-template .course-program-standard .course-program-accordion details{margin:0;border:0;border-bottom:1px solid #0a0a0a;background:transparent;color:#0a0a0a;transform:none!important}
+.course-template .course-program-standard .course-program-accordion summary{display:grid;grid-template-columns:72px minmax(0,1fr) 44px;align-items:center;gap:20px;padding:26px 4px;list-style:none;cursor:pointer;background:transparent;color:inherit;transition:background .2s ease,color .2s ease,padding .2s ease}
+.course-template .course-program-standard .course-program-accordion summary::-webkit-details-marker{display:none}
+.course-template .course-program-standard .program-num{font-family:var(--course-body-family);font-size:12px;line-height:1;color:#777;letter-spacing:.05em}
+.course-template .course-program-standard .program-title{font-family:var(--course-heading-family);font-size:clamp(23px,2.25vw,38px)!important;font-weight:400;line-height:1.08;letter-spacing:0;color:inherit}
+.course-template .course-program-standard .program-toggle{display:grid;place-items:center;justify-self:end;width:38px;height:38px;border:1px solid currentColor;border-radius:50%;font-family:var(--course-body-family);font-size:24px;line-height:1;transition:transform .25s ease}
+.course-template .course-program-standard details:hover>summary,.course-template .course-program-standard details[open]>summary{padding-right:18px;padding-left:18px;background:#080808;color:#f5f4ee}
+.course-template .course-program-standard details:hover .program-num,.course-template .course-program-standard details[open] .program-num{color:#aaa}
+.course-template .course-program-standard details:hover .program-toggle,.course-template .course-program-standard details[open] .program-toggle{border-color:#f5f4ee;color:#f5f4ee}
+.course-template .course-program-standard details[open] .program-toggle{transform:rotate(45deg)}
+.course-template .course-program-standard .program-content{margin:0;padding:0 72px 30px 92px;max-width:none;background:#deded8;color:#0a0a0a}
+.course-template .course-program-standard .program-content :is(ul,ol){display:grid;gap:0;margin:0;padding:0;list-style:none}
+.course-template .course-program-standard .program-content li{position:relative;padding:13px 0 13px 28px;border-top:1px solid #c2c2bc;color:#0a0a0a;font-family:var(--course-body-family);font-size:17px;line-height:1.45}
+.course-template .course-program-standard .program-content li::before{content:"→";position:absolute;top:13px;left:0}
+.course-template .course-program-standard .syllabus-intro,.course-template .course-program-standard .syllabus-columns{display:none}
+@media(max-width:760px){.course-template .course-program-standard{padding:76px 22px}.course-template .course-program-standard .section-heading{margin-bottom:38px;padding-top:18px}.course-template .course-program-standard .section-heading h2{font-size:clamp(43px,11vw,65px)}.course-template .course-program-standard .section-heading p{font-size:16px}.course-template .course-program-standard .course-program-accordion summary{grid-template-columns:42px minmax(0,1fr) 36px;gap:10px;padding:22px 0}.course-template .course-program-standard .program-title{font-size:23px!important}.course-template .course-program-standard .program-toggle{width:32px;height:32px;font-size:21px}.course-template .course-program-standard .program-content{padding:0 0 24px 42px}.course-template .course-program-standard .program-content li{padding-right:18px;font-size:15px}}
+@media(max-width:760px){.course-template :is(h1,h2){font-size:clamp(40px,10vw,65px)}.course-template :is(p,li){font-size:16px}.course-template :is(.gomzhin-faq summary,.accordion summary){font-size:22px}}
+/* Approved registration block shared by every course page. */
+.gomzhin-course .gomzhin-registration{min-height:500px;display:grid;grid-template-columns:1fr;place-items:center;text-align:center;position:relative;overflow:hidden;border-top:0;background:#080808;color:#fff}
+.gomzhin-course .gomzhin-registration::before{content:"";position:absolute;width:min(66vw,900px);aspect-ratio:1;border:1px solid #292927;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%)}
+.gomzhin-course .gomzhin-registration>div{position:relative;z-index:1;width:min(100%,720px);text-align:center}
+.gomzhin-course .gomzhin-registration>div+div{margin-top:22px}
+.gomzhin-course .gomzhin-registration h2{margin:0 0 30px;font-family:var(--course-heading-family);font-size:clamp(62px,6vw,108px);font-weight:700;line-height:.95;letter-spacing:0}
+.gomzhin-course .gomzhin-registration .registration-direct{justify-content:center;max-width:720px;text-align:center}
+.gomzhin-course .gomzhin-registration .registration-direct>p,.gomzhin-course .gomzhin-registration .registration-direct>small{flex-basis:100%}
+@media(max-width:760px){.gomzhin-course .gomzhin-registration{min-height:550px}.gomzhin-course .gomzhin-registration h2{font-size:clamp(56px,15vw,78px)}}

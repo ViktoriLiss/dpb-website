@@ -1,0 +1,92 @@
+/* Mobile patterns from the approved home and course catalogue.
+   Loaded only by the other pages; desktop layouts are unchanged. */
+@media (max-width: 680px) {
+  html body main section.section-pad,
+  html body main :is(.clinical-doubts, .gomzhin-registration, .dv-kit),
+  html body main.ton-course-page .gomzhin-support {
+    padding-top: 32px !important;
+  }
+
+  html body main :is(.announcements-v2__hero-copy, .materials-hero-copy) {
+    min-height: 0 !important;
+    padding-block: 24px 32px !important;
+  }
+
+  html body main :is(.announcements-v2__hero-copy, .materials-hero-copy) h1 {
+    margin-bottom: 32px !important;
+  }
+
+  html body main[class] :is(.gomzhin-faq, .dv-faq-list, .course-faq-list, .accordion) summary {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    gap: 16px;
+  }
+  html body main[class] :is(.gomzhin-faq-section .section-heading, .dv-faq .dv-section-head, .course-faq-heading) {
+    margin-bottom: 32px !important;
+  }
+  html body main :is(.gomzhin-faq, .dv-faq-list, .course-faq-list) summary > span:last-child {
+    flex-shrink: 0;
+    aspect-ratio: 1;
+  }
+
+  html body main .event-filters {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+    width: 100%;
+  }
+  html body main .event-filter {
+    min-width: 0;
+    min-height: 44px;
+    padding: 10px 2px;
+    font-size: 12px;
+    white-space: nowrap;
+    border-radius: 999px;
+  }
+
+  html body main .context-card {
+    border: 1px solid var(--black, #111);
+  }
+
+  html body main .gallery-arrow {
+    position: relative;
+    place-self: center;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px !important;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 0;
+    line-height: 0;
+  }
+  html body main .gallery-arrow::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    border: solid currentColor;
+    border-width: 0 2px 2px 0;
+    transform: translate(-65%, -50%) rotate(-45deg);
+  }
+  html body main .gallery-arrow--prev::before {
+    transform: translate(-35%, -50%) rotate(135deg);
+  }
+  html body main .announcements-v2__gallery {
+    scrollbar-width: none;
+  }
+  html body main .announcements-v2__gallery::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* Keep the responsive document locked to the viewport on narrow screens. */
+@media (max-width: 680px) {
+  html.dpb-responsive,
+  html.dpb-responsive body.dpb-responsive {
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+}

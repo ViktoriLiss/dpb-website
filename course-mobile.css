@@ -1,0 +1,376 @@
+/* Course-only mobile layer. Desktop, site header and footer retain their approved styles. */
+.course-gallery-controls { display: none; }
+@media (max-width: 760px) {
+  /* Equal-height mobile slides keep the controls close and preserve the whole photo. */
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-cases__intro small { display: none !important; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course div.gomzhin-gallery > a {
+    display: grid; place-items: center;
+    height: 100% !important; min-height: 0 !important; aspect-ratio: auto !important;
+    overflow: hidden !important; border-radius: 0 !important; background: transparent !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course div.gomzhin-gallery img {
+    display: block; width: 100% !important; height: 100% !important; min-height: 0 !important;
+    max-height: 100% !important; object-fit: contain !important; border-radius: 0 !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-lead,
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-support__copy p {
+    font-size: 15px !important; line-height: 1.5 !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .speaker-role span {
+    background: transparent !important; color: inherit !important;
+    font: inherit !important; vertical-align: baseline;
+  }
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-doubts, .dv-thoughts-section):not(.course-thought-story) {
+    height: auto !important; min-height: 0 !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-registration::before {
+    width: var(--registration-circle, 440px); height: auto;
+    aspect-ratio: 1; border-radius: 50%;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course section.gomzhin-registration {
+    min-height: calc(var(--registration-circle, 440px) + 24px) !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course div.gomzhin-gallery {
+    display: flex; gap: 12px; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scrollbar-width: none;
+    height: clamp(220px, 70vw, 360px); min-height: 0; align-items: stretch;
+    padding: 0; overscroll-behavior-x: contain;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course div.gomzhin-gallery::-webkit-scrollbar { display: none; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course div.gomzhin-gallery > a {
+    flex: 0 0 100%; width: 100%;
+    scroll-snap-align: start; scroll-snap-stop: always;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course div.gomzhin-gallery img {
+    width: 100%; height: 100%; object-fit: contain; transform: none;
+  }
+  html.course-mobile-page body.dpb-responsive .course-gallery-controls {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; margin-top: 16px; color: #080808; font-size: 14px;
+  }
+  html.course-mobile-page body.dpb-responsive .course-gallery-controls button {
+    width: 48px; height: 48px; padding: 0; border: 1px solid #080808;
+    border-radius: 50%; background: transparent; color: inherit;
+    font: inherit; font-size: 24px; cursor: pointer;
+  }
+  html.course-mobile-page body.dpb-responsive .course-gallery-controls button:disabled { opacity: .3; cursor: default; }
+  html.course-mobile-page body.dpb-responsive .course-gallery-controls button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+}
+@media (max-width: 1180px) {
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-hero__image {
+    height: auto !important;
+    min-height: 0 !important;
+    align-self: center;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-hero__image img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none;
+    object-fit: contain !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-speaker {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    min-height: 0;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-speaker > div { padding: 40px 28px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-speaker figure { min-height: 0; }
+}
+
+@media (max-width: 760px) {
+  /* clip contains decorations without making the body a separate scroll container. */
+  html.dpb-responsive.course-mobile-page,
+  html.dpb-responsive.course-mobile-page body.dpb-responsive {
+    overflow-x: clip !important;
+    overflow-y: visible !important;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) {
+    --mobile-course-pad: clamp(18px, 4.8vw, 28px);
+    --card-title-max: 24px;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) > section.section-pad {
+    padding: 32px var(--mobile-course-pad) 44px !important;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) .button,
+  html.course-mobile-page body.dpb-responsive .course-registration-dialog .button {
+    border-radius: 999px !important;
+    min-height: 48px !important;
+    height: auto !important;
+    padding: 14px 20px !important;
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+    white-space: normal;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.section-heading, .dv-section-head, .dv-fit-head) {
+    margin-bottom: 28px !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-hero__copy,
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-hero-copy {
+    padding: 32px 0 24px !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-hero { padding-top: 0 !important; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-actions { margin-top: 24px; gap: 10px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-hero__image { margin-bottom: 24px !important; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-date { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-date__days { font-size: clamp(58px, 15vw, 80px); }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-date__month { margin-left: 0; font-size: 22px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-date small { margin-left: 0; }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.gomzhin-facts, .dv-hero-facts) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    padding: 0 0 20px !important;
+    gap: 0;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.gomzhin-facts, .dv-hero-facts) > div {
+    min-height: 0;
+    padding: 16px 12px 16px 0;
+    border: 0;
+    border-top: 1px solid #383836;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.gomzhin-facts, .dv-hero-facts) dd { font-size: 13px; line-height: 1.5; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-hero-visual {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 16px 0;
+    margin-bottom: 24px;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-hero-visual img {
+    width: 100%; height: auto; max-height: none; object-fit: contain;
+  }
+
+  /* Natural-height cards: numbers, headings and text have consistent spacing. */
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.course-fit-grid, .course-path-grid, .gomzhin-included-grid, .dv-fit-rail, .dv-journey-grid, .dv-value-board) {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-auto-rows: auto !important;
+    grid-template-rows: none !important;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.course-fit-grid, .course-path-grid, .gomzhin-included-grid) article,
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 :is(.dv-fit-tile, .dv-step, .dv-value-module) {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 22px !important;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.course-fit-grid, .course-path-grid, .gomzhin-included-grid, .dv-fit-tile, .dv-step, .dv-value-module) h3 {
+    height: auto !important;
+    width: auto !important;
+    max-width: 100%;
+    margin: 20px 0 12px !important;
+    line-height: 1.2 !important;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.course-fit-grid, .course-path-grid, .gomzhin-included-grid, .dv-fit-tile, .dv-step, .dv-value-module) p {
+    margin: 0;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .course-path-grid article > span { align-self: flex-start; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-included-grid .included-num,
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-value-module > span {
+    position: relative; inset: auto;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .course-fit-grid article::after { min-width: 88px; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-fit-mark { width: 88px; height: 88px; }
+
+  /* Full-width portraits above the biography, never a narrow vertical crop. */
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-speaker {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-speaker figure {
+    width: 100%; height: auto; min-height: 0; aspect-ratio: 1;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-speaker figure img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center 24%;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-speaker > div {
+    width: 100%; max-width: none; padding: 32px var(--mobile-course-pad) 40px;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .speaker-role {
+    font-size: 15px !important; line-height: 1.5; text-transform: none; letter-spacing: 0;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-speaker p:not(.speaker-role) { font-size: 16px; line-height: 1.55; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-speaker-portrait {
+    min-height: 0; height: auto; aspect-ratio: 1; display: block;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-speaker-portrait img {
+    width: 100%; height: 100%; max-width: 100%; max-height: 100%; padding: 0; object-fit: cover; object-position: center 25%;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-speaker-bio { padding: 28px 22px 32px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-practice { min-height: 0; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-practice__copy { padding: 32px var(--mobile-course-pad) !important; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-practice__visual { margin: 0; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-support {
+    display: grid; grid-template-columns: minmax(0, 1fr) !important;
+    min-height: 0; padding: 32px var(--mobile-course-pad) 40px !important; gap: 24px;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-support__mark {
+    min-height: 0; height: auto; padding: 0; border: 0; font-size: 100px; line-height: 1; text-align: left;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-support__copy { padding: 0; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-kit { gap: 24px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-kit__body { padding: 28px 22px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-kit__body .button { width: 100%; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-certificate { gap: 24px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .certificate-mockup { min-height: 0; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-price-band { gap: 24px; padding-top: 28px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-price-band strong { font-size: clamp(48px, 13vw, 72px); line-height: 1.05; }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.gomzhin-registration, .dv-final) {
+    min-height: 0 !important; height: auto !important; padding: 52px var(--mobile-course-pad) !important;
+  }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.gomzhin-registration, .dv-final) .button { width: 100%; max-width: 360px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-cases__intro { margin-bottom: 24px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-cases__intro small { margin-top: 18px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: auto; gap: 8px;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-gallery a { aspect-ratio: 1; min-height: 0; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-gallery :is(.gomzhin-gallery__apple, .gomzhin-gallery__portrait) { aspect-ratio: 1.8; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-gallery img { object-fit: contain; }
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) :is(.course-program-accordion, .dv-program-list) summary {
+    grid-template-columns: 24px minmax(0, 1fr) 32px !important; gap: 10px; padding: 20px 0;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .course-program-accordion .program-title { font-size: 20px !important; line-height: 1.25; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .program-toggle { min-width: 32px; min-height: 32px; width: 32px; height: 32px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .course-program-standard .program-content { padding: 8px 16px 20px; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-program-list summary { font-size: 20px; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-bridge-intro { padding: 32px 22px 40px; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-bridge-columns { padding: 28px 0; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-works-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: auto; gap: 8px;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-works-collage figure {
+    grid-column: auto; grid-row: auto; min-height: 0; height: auto; aspect-ratio: 1;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-works-collage .w7 { grid-column: 1 / -1; aspect-ratio: 1.5; min-height: 0; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-works-collage img { object-fit: contain; min-height: 0; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-kit { gap: 24px; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-kit__body { padding: 28px 22px; }
+
+  /* Readable baseline, also used without JavaScript and with reduced motion. */
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-doubts, .dv-thoughts-section) {
+    display: block; position: relative; overflow: visible;
+    padding: 32px var(--mobile-course-pad) 40px !important;
+  }
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-doubts, .dv-thoughts-section)::before,
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-doubts, .dv-thoughts-section)::after { content: none; }
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-doubts__stage, .dv-thoughts-stage) {
+    display: flex !important; flex-direction: column; align-items: stretch;
+    gap: 14px !important; height: auto; min-height: 0; padding: 0;
+  }
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-doubts__center, .dv-thought-center) {
+    position: relative !important; inset: auto !important; order: -1;
+    width: 100% !important; max-width: 100%; padding: 0; margin: 0 0 20px;
+    transform: none !important; text-align: left;
+  }
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-doubts__center, .dv-thought-center) h2 { margin: 0; text-align: left; }
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-doubts__center, .dv-thought-center) p {
+    margin: 18px 0 0; font-size: 15px; line-height: 1.5;
+  }
+  html.course-mobile-page body.dpb-responsive main .clinical-thoughts { display: contents !important; }
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-thought, .dv-thought) {
+    position: relative !important; inset: auto !important; display: block;
+    align-self: flex-start; width: fit-content !important; max-width: 88% !important;
+    min-height: 0; padding: 14px 20px; margin: 0;
+    border-radius: 999px !important; font-size: 14px; line-height: 1.3;
+    font-weight: 600; white-space: normal; text-align: center;
+    opacity: 1 !important; transform: none !important; animation: none !important;
+    transition: none;
+  }
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-thought, .dv-thought):nth-child(even) { align-self: flex-end; }
+
+  /* Progressive enhancement: one extra viewport of natural scrolling. */
+  html.course-mobile-page body.dpb-responsive main .course-thought-story {
+    height: calc(var(--thought-stage-height) + var(--thought-travel)) !important;
+    min-height: 0 !important; padding: 0 var(--mobile-course-pad) !important;
+  }
+  html.course-mobile-page body.dpb-responsive main .course-thought-story .course-thought-stage {
+    position: sticky !important; top: var(--thought-header) !important;
+    height: var(--thought-stage-height) !important; min-height: 0 !important;
+    padding: 28px 0 0; display: block !important; overflow: clip;
+  }
+  html.course-mobile-page body.dpb-responsive main .course-thought-story .course-thought-center { margin: 0; }
+  html.course-mobile-page body.dpb-responsive main .course-thought-story .course-thought {
+    position: absolute !important;
+    top: var(--thought-deck) !important; left: var(--thought-left) !important; right: auto !important; bottom: auto !important;
+    width: 86% !important; max-width: 86% !important;
+    opacity: var(--thought-opacity, 0) !important;
+    transform: translate3d(var(--thought-x, 0px), var(--thought-y, 0px), 0) scale(var(--thought-scale, 1)) rotate(var(--thought-tilt)) !important;
+    transition: transform .32s ease, opacity .25s ease; transition-delay: 0s;
+    pointer-events: none;
+  }
+  html.course-mobile-page body.dpb-responsive .course-registration-dialog { width: calc(100% - 24px); max-width: 440px; border-radius: 20px; }
+  html.course-mobile-page body.dpb-responsive .course-registration-form { padding: 30px 22px !important; }
+  html.course-mobile-page body.dpb-responsive .course-registration-form h2 { font-size: 28px; line-height: 1.2; }
+  html.course-mobile-page body.dpb-responsive .course-registration-form input { font-size: 16px; min-height: 44px; }
+}
+/* Resolve legacy !important declarations on the lecture and tighten numbered cards. */
+@media (max-width: 760px) {
+  html.course-mobile-page body.dpb-responsive main:is(.gomzhin-course, .davtyan-v2) > section.course-thought-story {
+    padding: 0 var(--mobile-course-pad) !important;
+    overflow: visible !important;
+    display: block !important;
+    align-items: initial !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-included-grid article {
+    display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 10px 14px;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-included-grid .included-num {
+    grid-column: 1; grid-row: 1 / span 2; align-self: start;
+    min-width: 32px; min-height: 32px; width: 32px; height: 32px; font-size: 10px;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-included-grid article h3 {
+    grid-column: 2; margin: 0 !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-included-grid article p { grid-column: 2; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .course-path-grid article { display: grid; grid-template-columns: minmax(0, 1fr) 36px; gap: 12px; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .course-path-grid article > span {
+    position: static; grid-column: 2; grid-row: 1;
+    width: 36px; height: 36px; min-width: 36px; min-height: 36px;
+  }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .course-path-grid article h3 { grid-column: 1; grid-row: 1; margin: 0 !important; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .course-path-grid article p { grid-column: 1 / -1; padding-right: 22px; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-speaker-split { min-height: 0 !important; grid-template-columns: minmax(0, 1fr) !important; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-speaker-portrait {
+    width: 100% !important; max-width: 100% !important; min-height: 0 !important;
+    height: auto !important; aspect-ratio: 1; display: block !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-speaker-portrait img {
+    width: 100% !important; height: 100% !important; max-width: 100% !important;
+    max-height: 100% !important; padding: 0 !important; object-fit: cover !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-speaker-bio { padding: 28px 22px 32px !important; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-bridge-intro { padding: 32px 22px 40px !important; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-bridge-columns { padding: 28px 0 !important; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-works-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: none !important; grid-auto-rows: auto !important; gap: 8px !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-works-collage figure {
+    grid-column: auto !important; grid-row: auto !important; min-height: 0 !important;
+    height: auto !important; width: 100% !important; aspect-ratio: 1;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-works-collage .w7 { grid-column: 1 / -1 !important; aspect-ratio: 1.5; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-works-collage img { object-fit: contain !important; min-height: 0 !important; }
+}
+@media (max-width: 760px) {
+  html.course-mobile-page body.dpb-responsive main .course-thought-story .course-thought {
+    transition: transform .32s ease, opacity .25s ease !important;
+    transition-delay: 0s !important;
+  }
+  html.course-mobile-page body.dpb-responsive main :is(.clinical-doubts, .dv-thoughts-section):not(.course-thought-story) :is(.clinical-thought, .dv-thought) { transition: none !important; }
+  html.course-mobile-page body.dpb-responsive main.gomzhin-course .gomzhin-date__days { line-height: 1; }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-hero-facts dd,
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 .dv-hero-facts dd span {
+    white-space: normal !important; max-width: 100%; font-size: 13px !important; line-height: 1.5;
+  }
+  html.dpb-responsive.course-mobile-page body.dpb-responsive.dpb-responsive.dpb-responsive main.ton-course-page h1 {
+    font-size: clamp(32px, 8.4vw, 52px) !important; line-height: 1.18 !important;
+  }
+  html.course-mobile-page body.dpb-responsive main.davtyan-v2 {
+    --mobile-course-final-size: clamp(32px, 8vw, 48px);
+    --mobile-course-bridge-leading: 1.15;
+  }
+  html.course-mobile-page body.dpb-responsive:has(.dv-modal:not([hidden])) { overflow: hidden !important; }
+}
+
